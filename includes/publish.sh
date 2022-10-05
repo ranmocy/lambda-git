@@ -5,7 +5,7 @@ ROOTDIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")/../")
 export ROOTDIR
 cd "$ROOTDIR"
 
-BUCKET_PREFIX="lupin-lambda-git-"
+BUCKET_PREFIX="ranmocy-lambda-git-"
 
 source "./includes/utils.sh"
 source "./includes/aws_utils.sh"

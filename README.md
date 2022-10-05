@@ -42,4 +42,5 @@ As soon as I'm aware of its existence — just drop me an issue and I'll release
 See [LICENSE](/LICENSE) for details.
 
 ## Author
-That would be me, [Maciej Wilczyński](https://lupin.pl) \<m@lupin.pl\>.
+* [Maciej Wilczyński](https://lupin.pl) \<m@lupin.pl\>.
+* [Ranmocy](https://github.com/ranmocy)

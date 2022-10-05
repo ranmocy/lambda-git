@@ -42,6 +42,6 @@ RUN cd /root/git/git-${GIT_VERSION} && \
 RUN rm -rf /opt/share/{doc,locale,man}/
 
 ARG BUILD_ARCH
-RUN echo "Git ${GIT_VERSION} ${BUILD_ARCH} layer for AWS Lambda: https://github.com/mLupine/lambda-git" > /opt/git_info
+RUN echo "Git ${GIT_VERSION} ${BUILD_ARCH} layer for AWS Lambda: https://github.com/ranmocy/lambda-git" > /opt/git_info
 
 CMD [ "/bin/sh" ]
