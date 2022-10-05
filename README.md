@@ -19,9 +19,12 @@ This repo supports Git HTTPS operations (Git is compiled with curl).
 Layers are available in all major AWS regions (excl. opt-in regions, AWS China and Gov). Keep in mind that
 arm64 layers are only available in regions that support arm64-based Lambdas.
 
-| Git Version | OpenSSH Version | OpenSSL Version | Curl Version | x86_64 layer ARN                                                    | arm64 layer ARN                                                    |
-| ----------- | --------------- | --------------- | ------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| 2.38.0      | 8.8p1           | 1.1.1l          | 7.85.0       | `arn:aws:lambda:$AWS_REGION:507675645778:layer:lambda-git-x86_64:1` | `arn:aws:lambda:$AWS_REGION:507675645778:layer:lambda-git-arm64:1` |
+* Git Version:  2.38.0
+* OpenSSH Version:  8.8p1
+* OpenSSL Version:  1.1.1l
+* Curl Version:  7.85.0
+* x86_64 layer ARN:  `arn:aws:lambda:$AWS_REGION:507675645778:layer:lambda-git-x86_64:1`
+* arm64 layer ARN:  `arn:aws:lambda:$AWS_REGION:507675645778:layer:lambda-git-arm64:1`
 
 Make sure to replace `$AWS_REGION` with the AWS region you are using to deploy your Lambdas.
 
