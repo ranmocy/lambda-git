@@ -26,12 +26,12 @@ fi
 LAYER_PREFIX="lambda-git-"
 S3_FILENAME="layer-${GIT_VERSION}${REVISION}-${ARCH}.zip"
 DESCRIPTION="Git ${GIT_VERSION}, OpenSSH and OpenSSL for ${ARCH} AWS Lambdas"
-ARM_SUPPORTED_REGIONS="us-east-1 us-east-2 us-west-2 eu-central-1 eu-west-1 eu-west-1 ap-south-1 ap-southeast-1 ap-southeast-2 ap-northeast-1"
+ARM_SUPPORTED_REGIONS="us-east-1 us-east-2 us-west-1 us-west-2 eu-central-1 eu-west-1 eu-west-1 ap-south-1 ap-southeast-1 ap-southeast-2 ap-northeast-1"
 
 if [[ "${ARCH}" == "x86_64" ]]; then
     REGIONS="$(list_aws_regions)" || fatal 131 "Unable to determine a list of AWS regions"
 elif [[ "${ARCH}" == "arm64" ]]; then
-    REGIONS="$ARM_SUPPORTED_REGIONS"
+    REGIONS="$(list_aws_regions)" || fatal 131 "Unable to determine a list of AWS regions"
 else
     REGIONS=""
 fi
